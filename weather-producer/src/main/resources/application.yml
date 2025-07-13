@@ -1,0 +1,13 @@
+spring:
+    kafka:
+        bootstrap-servers: localhost:9092
+        producer:
+            key-serializer: org.apache.kafka.common.serialization.StringSerializer
+            value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+
+app:
+    kafka:
+        topic: weather-topic
+
+server:
+    port: 8082
